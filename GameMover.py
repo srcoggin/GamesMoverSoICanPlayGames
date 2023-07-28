@@ -3,7 +3,7 @@ import shutil
 
 def move_game_to_downloads(game_name, source_directory):
     # Get the path to the directory
-    new_directory = os.path.join(input("Input Where the Games are Moved to in brackets"))
+    new_directory = os.path.join(input("Input Where the Games are Moved to in brackets "))
 
     # Check if the source directory exists
     if not os.path.exists(source_directory):
@@ -32,8 +32,8 @@ def move_game_to_downloads(game_name, source_directory):
 
 if __name__ == "__main__":
     # Replace these values with your specific game names and source directory path
-    game_names = [input("What is the Folder of the Games called?")]
-    source_directory = input("Input Where the Games are, in brackets")
+    game_names = [input("What is the Folder of the Games called? ")]
+    source_directory = input("Input Where the Games are, in brackets ")
 
     for game in game_names:
         move_game_to_downloads(game, source_directory)
